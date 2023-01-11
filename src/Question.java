@@ -3,29 +3,29 @@ public class Question {
     int correctAnswer;
 
     //Players Answer
-    int playerAnswer;
+    int playerAnswer; //`0`
 
     //Identifier
     int imageId;
 
     String questionText;
-    String answerZero;
-    String answerOne ;
-    String answerTwo ;
-    String answerThree;
+    String answer0;
+    String answer1;
+    String answer2;
+    String answer3;
 
 
     //Constructors
 
 
-    public Question(int correctAnswer, int playerAnswer, int imageId, String questionText, String answerZero, String answerOne, String answerTwo, String answerThree) {
-        this.correctAnswer = correctAnswer;
-        this.playerAnswer = -1;
-        this.imageId = imageId;
-        this.questionText = questionText;
-        this.answerZero = answerZero;
-        this.answerOne = answerOne;
-        this.answerTwo = answerTwo;
-        this.answerThree = answerThree;
+    public Question(int imageIdentifier, String questionString, String answerZero, String answerOne, String answerTwo, String answerThree, int correctAnswerIndex) {
+        imageId = imageIdentifier;
+        questionText = questionString;
+        answer0 = answerZero;
+        answer1 = answerOne;
+        answer2 = answerTwo;
+        answer3 = answerThree;
+        correctAnswer = correctAnswerIndex;
+        playerAnswer = -1;
     }
 }
