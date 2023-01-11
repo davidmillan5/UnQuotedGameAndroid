@@ -28,4 +28,13 @@ public class Question {
         correctAnswer = correctAnswerIndex;
         playerAnswer = -1;
     }
+
+
+    boolean isCorrect(){
+
+        return correctAnswer == playerAnswer;
+
+    }
+
+
 }
