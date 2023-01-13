@@ -9,10 +9,8 @@ public class MainActivity {
     String getGameOverMessage(int totalCorrect, int totalQuestions) {
         if (totalCorrect == totalQuestions) {
             return "You got all " + totalQuestions + " right! You won!";
-        } else if (totalCorrect < totalQuestions) {
+        } else{
             return "You got " + totalCorrect + " right out of " + totalQuestions + ". Better luck next Time!";
-        } else {
-            return "Try again...";
         }
     }
 }
